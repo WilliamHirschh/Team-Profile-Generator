@@ -145,17 +145,17 @@ inquirer
             </div>
         
             <div class="EngineerDiv">
-                <h1 class="EngineerName"></h1>
-                <h2 class="EngineerID">ID:</h2>
-                <a href="mailto: " class="EngineerEmail">Email</a>
-                <a href="github.com/" class="EngineerGitHub">GitHub</a>
+                <h1 class="EngineerName">${answers.EngineerName}</h1>
+                <h2 class="EngineerID">ID: ${answers.EngineerId}</h2>
+                <a href="mailto: ${answers.EngineerEmail}" class="EngineerEmail">Email</a>
+                <a href="${answers.EngineerGitHub}" class="EngineerGitHub">GitHub</a>
             </div>
         
             <div class="InternDiv">
-                <h1 class="InternName"></h1>
-                <h2 class="InternID">ID:</h2>
-                <a href="mailto: " class="InternEmail">Email</a>
-                <h3 class="InternSchool">School: </h3>
+                <h1 class="InternName">${answers.InternName}</h1>
+                <h2 class="InternID">ID: ${answers.InternId}</h2>
+                <a href="mailto: ${answers.InternEmail}" class="InternEmail">Email</a>
+                <h3 class="InternSchool">School: ${answers.InternSchool} </h3>
             </div>
         </body>
         </html>`
