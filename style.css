@@ -1,0 +1,31 @@
+body {
+    display: inline-block;
+    background-color: rgb(95, 96, 96);
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    background-color: rgb(158, 158, 158);
+    padding: 10px;
+    margin: 0px;
+    width: 100vw;
+}
+
+.ManagerDiv {
+    color: white;
+    padding: 15px;
+    background-color: rgb(48, 48, 48);
+}
+.EngineerDiv {
+    color: white;
+    padding: 15px;
+    background-color: rgb(95, 96, 96);
+}
+.InternDiv {
+    color: white;
+    padding: 15px;
+    background-color: rgb(48, 48, 48);
+}
