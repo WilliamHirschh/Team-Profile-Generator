@@ -124,5 +124,44 @@ inquirer
             name: 'InternSchool',
             message: 'Where does the Intern go to school?',
         }
-    ])}
+    ]).then((answers) => {
+        const html = `<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Team Profile</title>
+        </head>
+        <body>
+            <header class="header">Team Profile</header>
+        
+            <div class="ManagerDiv">
+                <h1 class="ManagerName">${answers.managerName}</h1>
+                <h2 class="ManagerID">ID: ${answers.employeeID}</h2>
+                <a href="mailto: ${answers.emailAddress}" class="ManagerEmail">Email</a>
+                <h4 class="ManagerOfficeNumber">Office #${answers.officeNumber}:</h4>
+                <a href="github.com/${answers.github}" class="ManagersGitHub">GitHub</a>
+            </div>
+        
+            <div class="EngineerDiv">
+                <h1 class="EngineerName"></h1>
+                <h2 class="EngineerID">ID:</h2>
+                <a href="mailto: " class="EngineerEmail">Email</a>
+                <a href="github.com/" class="EngineerGitHub">GitHub</a>
+            </div>
+        
+            <div class="InternDiv">
+                <h1 class="InternName"></h1>
+                <h2 class="InternID">ID:</h2>
+                <a href="mailto: " class="InternEmail">Email</a>
+                <h3 class="InternSchool">School: </h3>
+            </div>
+        </body>
+        </html>`
+        fs.writeFile('index.html', html, (err) =>
+      err ? console.error(err) : console.log('Success!')
+    );
+    });}
+    
   
