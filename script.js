@@ -1,7 +1,7 @@
-const generateHTML = require('./src/generateHTML');
-const Manager = require('./lib/Manager');
-const Engineer = require('./lib/Engineer');
-const Intern = require('./lib/Intern'); 
+const generateHTML = require('./MakeHtml');
+const Manager = require('./Employees/manager');
+const Engineer = require('./Employees/engineer');
+const Intern = require('./Employees/intern'); 
 
 const fs = require('fs'); 
 const inquirer = require('inquirer');
